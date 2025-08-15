@@ -10,6 +10,17 @@ section {
     align-items: center;
     min-height: 100vh;
     background-color: #042104;
+    animation: animateBG 10s linear infinite;
+}
+
+@keyframes animateBG {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 section .loader {
